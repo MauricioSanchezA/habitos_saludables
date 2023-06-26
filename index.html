@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENA_ADSO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilo.css">
+
+
+</head>
+
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>SENA</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sabores" onclick="seleccionar()">
+                                <i class="fa-solid fa-ice-cream"></i>
+                                <span>Habitos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#platos" onclick="seleccionar()">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Platos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="tel:+57 3135134594">
+                        <i class="fa-solid fa-phone"></i>+(57)313_5134594
+                    </a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity"
+                data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="gallery-cell">
+                    <img src="img/img_5.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/img_6.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/img_3.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/img_4.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Comidas, habitos y estilos de vida saludables</h2>
+                <p>Para una vida mejor</p>
+                <!-- <button>Leer Más</button> -->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION HABITOS SALUDABLES -->
+    <section id="sabores">
+        <h2>Habitos Saludables</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/habito_1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Ejercicio</h3>
+                    <p>El ejercicio es un factor clave para mantenerse saludable.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/habito_2.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Yoga</h3>
+                    <p>cuida y fortalece el cuerpo y la mente. Armonía</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/habito_3.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Comida</h3>
+                    <p>La alimentación Balanceada es importante.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/habito_4.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Dormir</h3>
+                    <p>El sueño le permite al cuerpo revitalizarse, renovarse y reponerse.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/habito_5.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Pausas activas</h3>
+                    <p>Actividad física desarrolladas en el entorno laboral.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/habito_6.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Deportes y Ocio</h3>
+                    <p>Realizar actividades en tiempo libre y disfrutar del ocio.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <button>Leer Más</button> -->
+
+    </section>
+
+    <!-- SECCION PLATOS -->
+    <section id="platos">
+        <h2>Platos</h2>
+
+        <div class="fila">
+            <div class="item">
+                <img src="img/plato12_frutas.jpg" alt="">
+                <p>Frutas frescas</p>
+            </div>
+            <div class="item">
+                <img src="img/plato13_granos.jpg" alt="">
+                <p>Granos balanceados</p>
+            </div>
+            <div class="item">
+                <img src="img/plato14_proteinas.jpg" alt="">
+                <p>Carnes rojas</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <img src="img/plato15_verduras (2).jpg" alt="">
+                <p>Verduras frescas y nutritivas</p>
+            </div>
+            <div class="item">
+                <img src="img/plato16_lacteos.jpg" alt="">
+                <p>Lacteos y algunos derivados</p>
+            </div>
+            <div class="item">
+                <img src="img/plato6.jpg" alt="">
+                <p>Comida reconfortante</p>
+            </div>
+        </div>
+
+        <!-- <button>Leer Más</button> -->
+
+    </section>
+
+    <!-- SECCION BLOG -->
+    <!--<section id="blog">
+        <h2>Blog</h2>
+        <div class="galeria-blog js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": true}'>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>El arte de cocinar</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam
+                            alias asperiores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>¿Donde estudiar cocina?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam
+                            alias asperiores culpa minus corporis neque hic sunt dolore.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>La cocina del 2023</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam
+                            alias asperiores culpa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>Leer Más</button>
+    </section> -->
+
+    <!-- SECCION CONTACTO Y PIE DE PAGINA -->
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>SENA 2560119</h1>
+            </div>
+            <div class="col">
+                <h3>Menú</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#sabores">Habitos</a>
+                <a href="#sabores">Platos</a>
+            </div>
+            <!--<div class="col">
+                <h3>Cheffs</h3>
+                <a href="#">Marcos G.</a>
+                <a href="#">María L.</a>
+                <a href="#">Marta J.</a>
+            </div>-->
+            <div class="col">
+                <h3>Social</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Mauricio Sánchez Abella</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
